@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "target": "es2020",
+      "module": "commonjs",
+      "allowJs": true,    // <- inspect .js files
+      "checkJs": true,    // <- turn on @ts-check
+      "noEmit": true,     // <- don’t output anything
+      "types": ["screeps"],
+      "lib": ["es2024", "DOM"],
+    },
+    "include": [
+        "typings/**/*.d.ts",   // ← pick up your ambient files
+        "**/*.js"              //   plus the actual code
+    ],
+    "exclude": ["node_modules"]   // keep the crawl fast
+  }
+  
